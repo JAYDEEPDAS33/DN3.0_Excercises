@@ -9,8 +9,6 @@ public class Main {
             new Order("4", "David", 50.25),
             new Order("5", "Eve", 100.00)
         };
-
-        // Bubble Sort
         System.out.println("Before Bubble Sort:");
         Arrays.stream(orders).forEach(System.out::println);
         
@@ -19,7 +17,6 @@ public class Main {
         System.out.println("\nAfter Bubble Sort:");
         Arrays.stream(orders).forEach(System.out::println);
 
-        // Reset the order array
         orders = new Order[]{
             new Order("1", "Alice", 150.50),
             new Order("2", "Bob", 80.75),
@@ -27,8 +24,6 @@ public class Main {
             new Order("4", "David", 50.25),
             new Order("5", "Eve", 100.00)
         };
-
-        // Quick Sort
         System.out.println("\nBefore Quick Sort:");
         Arrays.stream(orders).forEach(System.out::println);
 
