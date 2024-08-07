@@ -8,14 +8,11 @@ public class TaskManagementSystem {
             this.next = null;
         }
     }
-
     private Node head;
 
     public TaskManagementSystem() {
         this.head = null;
     }
-
-    // Add a new task
     public void addTask(Task task) {
         Node newNode = new Node(task);
         if (head == null) {
@@ -28,8 +25,6 @@ public class TaskManagementSystem {
             current.next = newNode;
         }
     }
-
-    // Search for a task by taskId
     public Task searchTask(String taskId) {
         Node current = head;
         while (current != null) {
@@ -40,8 +35,6 @@ public class TaskManagementSystem {
         }
         return null;
     }
-
-    // Traverse and display all tasks
     public void traverseTasks() {
         Node current = head;
         while (current != null) {
@@ -49,8 +42,6 @@ public class TaskManagementSystem {
             current = current.next;
         }
     }
-
-    // Delete a task by taskId
     public void deleteTask(String taskId) {
         if (head == null) {
             System.out.println("List is empty.");
@@ -73,7 +64,6 @@ public class TaskManagementSystem {
             current.next = current.next.next;
         }
     }
-
     public static void main(String[] args) {
         TaskManagementSystem tms = new TaskManagementSystem();
 

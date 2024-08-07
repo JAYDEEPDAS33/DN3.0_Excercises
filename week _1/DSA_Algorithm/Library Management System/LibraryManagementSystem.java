@@ -14,8 +14,6 @@ public class LibraryManagementSystem {
             System.out.println("Library is full. Cannot add more books.");
         }
     }
-
-    // Linear search to find books by title
     public Book linearSearchByTitle(String title) {
         for (int i = 0; i < size; i++) {
             if (books[i].getTitle().equalsIgnoreCase(title)) {
@@ -25,7 +23,6 @@ public class LibraryManagementSystem {
         return null;
     }
 
-    // Binary search to find books by title (assuming the list is sorted)
     public Book binarySearchByTitle(String title) {
         int left = 0;
         int right = size - 1;

@@ -57,9 +57,9 @@ public class EmployeeManagementSystem {
     public static void main(String[] args) {
         EmployeeManagementSystem ems = new EmployeeManagementSystem(5);
 
-        Employee emp1 = new Employee("1", "Alice", "Manager", 75000);
-        Employee emp2 = new Employee("2", "Bob", "Developer", 60000);
-        Employee emp3 = new Employee("3", "Charlie", "Analyst", 50000);
+        Employee emp1 = new Employee("1", "Ayan", "Manager", 72000);
+        Employee emp2 = new Employee("2", "Babai", "Developer", 50000);
+        Employee emp3 = new Employee("3", "Raman", "Analyst", 45000);
 
         ems.addEmployee(emp1);
         ems.addEmployee(emp2);
